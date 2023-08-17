@@ -9,7 +9,7 @@ function padNumber(number, length) {
 }
 
 function changeTimer() {
-    let date = new Date(launchTime - Date.now());
+    let date = new Date(Math.max(launchTime - Date.now(), 0));
     document.getElementById("countdownData").innerText = padNumber(date.getUTCHours(), 2) + ':' + padNumber(date.getUTCMinutes(), 2) + ':' + padNumber(date.getUTCSeconds(), 2) + '.' + padNumber(date.getUTCMilliseconds(), 3);
 }
 
