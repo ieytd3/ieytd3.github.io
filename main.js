@@ -10,7 +10,12 @@ function padNumber(number, length) {
 
 function changeTimer() {
     let date = new Date(launchTime - Date.now());
-    document.getElementById("countdownForeground").innerText = padNumber(date.getUTCHours(), 2) + ':' + padNumber(date.getUTCMinutes(), 2) + ':' + padNumber(date.getUTCSeconds(), 2) + '.' + padNumber(date.getUTCMilliseconds(), 3);
+    document.getElementById("countdownData").innerText = padNumber(date.getUTCHours(), 2) + ':' + padNumber(date.getUTCMinutes(), 2) + ':' + padNumber(date.getUTCSeconds(), 2) + '.' + padNumber(date.getUTCMilliseconds(), 3);
 }
 
-setInterval(changeTimer, 1);
+function loaded() {
+    let date = new Date(launchTime);
+    document.getElementById("localData").innerText = padNumber(date.getHours(), 2) + ':' + padNumber(date.getMinutes(), 2);
+
+    setInterval(changeTimer, 1);
+}

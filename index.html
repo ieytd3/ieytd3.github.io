@@ -5,14 +5,23 @@
     <script src="main.js"></script>
     <link href="./main.css" rel="stylesheet"/>
 </head>
-<body>
+<body onload="loaded()">
     <h1 style="text-align: center;">IEYTD3 LAUNCH</h1>
     <div class="countdownWrapper">
-        <div id="countdownDisplay">
-            <h2 class="segment" id="countdownBackground">88:88:88.888</h2>
-            <h2 class="segment" id="countdownForeground"></h2>
+        <div class="countdownDisplay">
+            <h2 class="segment segmentBackground">88:88:88.888</h2>
+            <h2 class="segment segmentForeground" id="countdownData"></h2>
+        </div>
+
+        <h3>Local Launch Time:</h3>
+        <div class="countdownDisplay">
+            <h2 class="segment segmentBackground">88:88</h2>
+            <h2 class="segment segmentForeground" id="localData"></h2>
         </div>
     </div>
+
+    <h2>Live John Reaction:</h2>
+    <img src="/john.jpg">
 
     <p>unnoficial plz no sue me schellgames I just try to tell people the time IEYTD3 launches I'm not claiming this is official except for that one joke Discord message plz don't sue me</p>
 </body>

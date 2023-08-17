@@ -18,9 +18,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-#countdownDisplay {
+.countdownDisplay {
     position: relative;
 }
 
@@ -32,13 +33,13 @@
     text-align: center;
 }
 
-#countdownBackground {
+.segmentBackground {
     position:absolute;
     color: #444;
     z-index: 1;
 }
 
-#countdownForeground {
+.segmentForeground {
     position: relative;
     z-index: 500;
 }
