@@ -28,7 +28,6 @@
 .segment {
     top: 0;
     font-family: 'segmented';
-    font-size: 10vW;
     color: red;
     text-align: center;
 }
