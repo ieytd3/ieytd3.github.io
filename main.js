@@ -10,7 +10,7 @@ function padNumber(number, length) {
 
 function changeTimer() {
     let date = new Date(launchTime - Date.now());
-    document.getElementById("countdownForeground").innerText = padNumber(date.getHours(), 2) + ':' + padNumber(date.getMinutes(), 2) + ':' + padNumber(date.getSeconds(), 2) + '.' + padNumber(date.getMilliseconds(), 3);
+    document.getElementById("countdownForeground").innerText = padNumber(date.getUTCHours(), 2) + ':' + padNumber(date.getUTCMinutes(), 2) + ':' + padNumber(date.getUTCSeconds(), 2) + '.' + padNumber(date.getUTCMilliseconds(), 3);
 }
 
 setInterval(changeTimer, 1);
