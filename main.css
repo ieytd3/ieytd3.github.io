@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "segmented";
+    src: url("DSEG7Classic-Regular.woff2");
+}
+
+:root {
+    background-color: #333;
+}
+
+* {
+    font-family: sans-serif;
+    color: white;
+}
+
+.segment {
+    position:absolute;
+    font-family: 'segmented';
+    font-size: 500%;
+    color: red;
+    text-align: center;
+}
+
+#countdownBackground {
+    color: #444;
+    z-index: 1;
+}
+
+#countdownForeground {
+    z-index: 500;
+}
